@@ -1,0 +1,78 @@
+/* Course: SENG 513 */
+/* Date: Nov 16, 2023 */
+/* Assignment 3 */
+/* Name: Jessica Tran */
+/* UCID: 30089544 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+
+  transition: opacity 1s ease-in-out;
+}
+
+.game-container {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 5px solid black;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+canvas {
+  background: url("../assets/backgrounds/background_3.png");
+}
+
+#overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+#sun {
+  position: absolute;
+  width: 150px;
+  left: 325px;
+  animation: spin 10000ms linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#clouds {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  animation: loop 50s linear infinite;
+}
+
+@keyframes loop {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2560px;
+  }
+}
+
+#cat1, #cat2, #gem1, #gem2, #gem3, #gem4, #gem5, #gem6 {
+  display: none;
+}

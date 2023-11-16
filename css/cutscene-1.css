@@ -1,0 +1,70 @@
+/* Course: SENG 513 */
+/* Date: Nov 16, 2023 */
+/* Assignment 3 */
+/* Name: Jessica Tran */
+/* UCID: 30089544 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+
+  transition: opacity 1s ease-in-out;
+}
+
+#div-1 {
+  background-image: url("../assets/cutscenes/cutscene_1.gif");
+  background-position:center;
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 5px solid black;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#div-1 button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+#div-1 .next-button {
+  position: absolute;
+  width: 200px;
+  top: 92.5%;
+  left: 91.5%;
+  transform: translate(-50%, -50%);
+}
+
+#next {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#next:hover {
+  content: url("../assets/logos/next_button_hover.png");
+}
+
+#div-1 .dialog-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 78%;
+}
+
+#div-1 .dialog-container img {
+  position: absolute;
+  display: none;
+}
