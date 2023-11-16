@@ -27,3 +27,6 @@ In a world teetering on the brink of chaos, the fate of all rests in your hands.
 - Use SPACE bar to skip through cutscenes
 - Player 1: Use WASD keys to move around and collect items
 - Player 2: Use ARROW keys to move around and collect items
+
+## Helpful Sources
+https://www.youtube.com/@Frankslaboratory
