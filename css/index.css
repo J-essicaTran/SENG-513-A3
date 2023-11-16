@@ -111,7 +111,6 @@ body {
   width: 200px;
   top: 60%;
   left: 45%;
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 

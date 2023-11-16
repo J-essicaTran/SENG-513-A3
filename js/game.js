@@ -4,7 +4,7 @@
 // Name: Jessica Tran
 // UCID: 30089544
 
-// Load Event - Is fired when the whole page has loaded, including all dependant resources, such as stylesheets and images
+// Load Event - Is fired when the whole page has loaded, including all dependent resources, such as stylesheets and images
 window.addEventListener("load", function () {
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
